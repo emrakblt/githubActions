@@ -10,3 +10,5 @@ jobs:
         run: echo "Hello World"
       - name: Try the cluster !
         run: kubectl get pods -A
+      - name: helm install
+        run: choco install kubernetes-helm
