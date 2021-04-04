@@ -6,11 +6,12 @@ jobs:
   run-shell-command:
     runs-on: self-hosted
     steps: 
-      - name: echo a string
-        run: echo "Hello World"
+
       - name: Try the cluster !
         run: kubectl get pods -A
       - name: helm check
         run: helm env
       - name: helm package
-        run: helm package helm-myapp
+        run: |
+         cd C:\github\githubActions
+         helm package helm-myapp
