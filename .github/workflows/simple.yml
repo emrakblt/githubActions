@@ -12,3 +12,5 @@ jobs:
         run: kubectl get pods -A
       - name: helm check
         run: helm env
+      - name: helm package
+        run: helm package helm-myapp
