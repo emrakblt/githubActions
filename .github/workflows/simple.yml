@@ -15,3 +15,5 @@ jobs:
         run: |
          cd C:\github\githubActions
          helm package helm-myapp
+      - name: helm registry
+        run: helm repo add helm-hosted http://localhost:8081/repository/helm-hosted/ --username admin --password admin123
